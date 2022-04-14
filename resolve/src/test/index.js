@@ -1,0 +1,1 @@
+import Utilit from 'Utilties/utility'; // resolve在使用时就可以使用别名

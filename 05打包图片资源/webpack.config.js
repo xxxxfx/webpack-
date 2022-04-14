@@ -42,7 +42,7 @@ module.exports = {
         // 解决： 关闭url-loader的es6模块化， 使用commonjs解析
         loader: 'html-loader'
 
-      }
+      },
     ],
   },
   plugins: [
