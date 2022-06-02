@@ -1,0 +1,1 @@
+console.log("index文件被加载"),"serviceWorker"in navigator&&window.addEventListener("load",(function(){navigator.serviceWorker.register("/service-worker.js").then((function(){console.log("注册成功")})).catch((function(){console.log("注册失败")}))}));

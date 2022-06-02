@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk=self.webpackChunk||[]).push([[111],{9111:(l,o,e)=>{e.r(o),e.d(o,{hello:()=>h,mul:()=>n}),console.log("hello文件被加载");var h=function(){console.log("hhhh")},n=function(l,o){console.log(l*o)}}}]);

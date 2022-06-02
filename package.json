@@ -12,11 +12,18 @@
   "dependencies": {
     "@salesforce/eslint-config-lwc": "^3.3.0",
     "css-loader": "^6.7.1",
-    "html-webpack-plugin": "^5.5.0"
+    "eslint-plugin-jest": "^26.1.4",
+    "html-loader": "^3.1.0",
+    "html-webpack-plugin": "^5.5.0",
+    "jquery": "^3.6.0",
+    "workbox-webpack-plugin": "^6.5.3"
   },
   "devDependencies": {
     "@babel/core": "^7.17.9",
     "@babel/preset-env": "^7.16.11",
+    "@lwc/eslint-plugin-lwc": "^1.2.1",
+    "@salesforce/eslint-plugin-lightning": "^1.0.0",
+    "add-asset-html-webpack-plugin": "^5.0.2",
     "babel-loader": "^8.2.4",
     "core-js": "^3.21.1",
     "eslint": "^8.11.0",
@@ -27,6 +34,7 @@
     "file-loader": "^6.2.0",
     "html-withimg-loader": "^0.1.16",
     "install": "^0.13.0",
+    "jest": "^27.5.1",
     "less": "^4.1.2",
     "less-loader": "^10.2.0",
     "mini-css-extract-plugin": "^2.6.0",
@@ -34,11 +42,17 @@
     "postcss": "^8.4.12",
     "postcss-loader": "^6.2.1",
     "postcss-preset-env": "^7.4.3",
+    "thread-loader": "^3.0.4",
     "url-loader": "^4.1.1",
-    "webpack": "^5.72.0"
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.8.1"
   },
   "eslintConfig": {
-    "extends": "airbnb-base"
+    "extends": "airbnb-base",
+    "env": {
+      "browser": true
+    }
   },
   "browserslist": {
     "development": [
