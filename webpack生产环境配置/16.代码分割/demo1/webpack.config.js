@@ -1,5 +1,5 @@
 const { resolve } = require('path');
-const path = require('path');
+// const path = require('path');
 const HtmlWebpackPlugin =require('html-webpack-plugin');
 const ESLintPlugin = require('eslint-webpack-plugin');
 process.env.NODE_ENV = 'production';
@@ -40,7 +40,8 @@ module.exports= {
             }
           }]
           ],
-          cacheDirectory: true // 开启babel缓存，第二次构建=时，会读取之前的缓存
+          cacheDirectory: true, // 开启babel缓存，第二次构建=时，会读取之前的缓存
+          cacheCompression: false
         }
       }
     ]
@@ -62,16 +63,16 @@ module.exports= {
       fix: true
     })
   ],
-  devServer: { 
-    /** webpack-dev-server全局安装不然在mac上安装不了 */
-   static: {
-     directory: path.join(__dirname, 'build'),
-   },
-   compress: true,
-   port: 9001,
-   open: true,
-   hot: true
- },
-  // devtool: 'source-map',
+//   devServer: { 
+//     /** webpack-dev-server全局安装不然在mac上安装不了 */
+//    static: {
+//      directory: path.join(__dirname, 'build'),
+//    },
+//    compress: true,
+//    port: 9001,
+//    open: true,
+//    hot: true
+//  },
+  devtool: 'source-map',
   mode: 'production'
 }
